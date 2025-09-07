@@ -1,0 +1,220 @@
+/* Mobile-first approach - Base styles for mobile devices */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  overflow: hidden; /* Clip overflow outside viewport */
+}
+
+/* Header Styles */
+.header {
+  margin-top: 6.25rem; /* 100px */
+  position: relative;
+}
+
+.header-content {
+  margin-left: 2.5rem; /* 40px */
+  position: relative;
+  width: 20rem; /* Fixed width */
+}
+
+.header-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #FFD700; /* Gold color */
+  margin-bottom: 0.125rem; /* 2px minimal spacing */
+  width: 15rem; /* Fixed width */
+  height: 3rem; /* Fixed height for flip animation */
+  overflow: hidden;
+  position: relative;
+}
+
+.header-title::before {
+  content: "பார் மெனு";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: titleFlip 6s infinite;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes titleFlip {
+  0%, 30% {
+    content: "பார் மெனு";
+    transform: rotateX(0deg);
+  }
+  33% {
+    transform: rotateX(90deg);
+  }
+  35%, 63% {
+    content: "menu bar";
+    transform: rotateX(0deg);
+  }
+  66% {
+    transform: rotateX(90deg);
+  }
+  68%, 97% {
+    content: "मेनू बार";
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #666;
+  margin-bottom: 0;
+  width: 12rem; /* Fixed width */
+  height: 2rem; /* Fixed height for flip animation */
+  overflow: hidden;
+  position: relative;
+}
+
+.header-subtitle::before {
+  content: "நல்ல வரவேற்பு";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: subtitleFlip 6s infinite;
+  display: flex;
+  align-items: center;
+}
+
+@keyframes subtitleFlip {
+  0%, 30% {
+    content: "நல்ல வரவேற்பு";
+    transform: rotateX(0deg);
+  }
+  33% {
+    transform: rotateX(90deg);
+  }
+  35%, 63% {
+    content: "warm welcome";
+    transform: rotateX(0deg);
+  }
+  66% {
+    transform: rotateX(90deg);
+  }
+  68%, 97% {
+    content: "स्वागत है";
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+.header-image {
+  position: absolute;
+  top: -2.125rem;
+  left: 5em;
+  width: 22rem;
+  height: 20rem;
+  object-fit: contain;
+  z-index: 10;
+}
+
+/* MenuItem Styles */
+.menu-item {
+  margin-left: 2.5rem; /* 40px consistent alignment */
+  margin-right: 2.5rem;
+}
+
+.menu-item:first-of-type {
+  margin-top: 19.375rem; /* 310px from top to first menu item */
+}
+
+.menu-item:not(:first-of-type) {
+  margin-top: 2.8125rem; /* 45px between menu items */
+}
+
+.menu-item-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.1875rem; /* 3px minimal spacing */
+  text-transform: lowercase;
+}
+
+.menu-item-underline {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 0;
+  margin-bottom: 0.75rem; /* 12px spacing to description */
+}
+
+.menu-item-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Footer Styles */
+.footer {
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .header-title {
+    font-size: 2.5rem;
+  }
+  
+  .header-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  
+  .menu-item-title {
+    font-size: 1.75rem;
+  }
+  
+  .menu-item-description {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  .app {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .header-title {
+    font-size: 3rem;
+  }
+  
+  
+  .menu-item-title {
+    font-size: 2rem;
+  }
+}
