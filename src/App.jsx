@@ -11,19 +11,23 @@ function App() {
       <Header />
       <MenuItem 
         title="rasna cocktail" 
-        description={loremText} 
+        description={loremText}
+        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
       />
       <MenuItem 
         title="classic margarita" 
         description={loremText} 
+        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
       />
       <MenuItem 
         title="whiskey sour" 
         description={loremText} 
+        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
       />
       <MenuItem 
         title="old fashioned" 
         description={loremText} 
+        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
       />
       <Footer />
     </main>

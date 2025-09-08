@@ -46,11 +46,35 @@ body {
   width: min(20rem, calc(100vw - 5rem)); /* Responsive width with margins */
 }
 
+.header-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0.3rem 0; /* Reduced spacing */
+  gap: 0.5rem;
+}
+
+.header-line::before,
+.header-line::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #333;
+  max-width: 8rem; /* Match menu item line length approximately */
+}
+
+.header-line-dot {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1;
+}
+
 .header-title {
   font-size: 2rem;
   font-weight: 700;
   color: #FFD700; /* Gold color */
-  margin-bottom: 0.125rem; /* 2px minimal spacing */
+  margin: 0; /* Remove margins for tighter spacing */
   width: 100%; /* Full width for proper centering */
   height: 3rem; /* Fixed height for flip animation */
   overflow: hidden;
@@ -97,7 +121,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   color: #666;
-  margin-bottom: 0;
+  margin: 0; /* Remove all margins for tighter spacing */
   width: 100%; /* Full width for proper centering */
   height: 2rem; /* Fixed height for flip animation */
   overflow: hidden;
@@ -142,7 +166,7 @@ body {
 
 .header-image {
   position: absolute;
-  top: calc(28px + 60px + 10px); /* 28px (header top) + ~60px (header height) + 10px spacing */
+  top: calc(58px + 60px + 10px); /* 28px (header top) + ~60px (header height) + 10px spacing */
   left: 50%;
   transform: translateX(-50%);
   width: 22rem;
@@ -201,6 +225,16 @@ body {
   color: #666;
   line-height: 1.5;
   margin: 0;
+  margin-bottom: 0.75rem;
+}
+
+.menu-item-ingredient-list {
+  font-size: 0.75rem; /* Smaller than description */
+  font-weight: 300; /* Thinner font weight */
+  color: #888; /* Lighter color */
+  line-height: 1.4;
+  margin: 0;
+  font-style: italic; /* Subtle styling difference */
 }
 
 /* Footer Styles */
