@@ -176,6 +176,18 @@ body {
   text-transform: lowercase;
 }
 
+.menu-item:nth-of-type(1) .menu-item-title {
+  color: #FFA700; /* First menu item - orange/amber */
+}
+
+.menu-item:nth-of-type(2) .menu-item-title {
+  color: #996600; /* Second menu item - brown/gold */
+}
+
+.menu-item:nth-of-type(3) .menu-item-title {
+  color: #E73C3C; /* Third menu item - red */
+}
+
 .menu-item-underline {
   border: none;
   height: 1px;
