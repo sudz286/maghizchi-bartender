@@ -62,12 +62,14 @@ body {
   height: 1px;
   background-color: #333;
   max-width: 8rem; /* Match menu item line length approximately */
+  opacity: 0.67; /* Faded effect for header lines */
 }
 
 .header-line-dot {
   color: #333;
   font-size: 1rem;
   line-height: 1;
+  opacity: 0.67; /* Faded effect for header dots */
 }
 
 .header-title {
@@ -80,6 +82,8 @@ body {
   overflow: hidden;
   position: relative;
   text-align: center;
+  opacity: 0.67; /* More faded effect */
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.2); /* Softer, more diffused glow */
 }
 
 .header-title::before {
@@ -199,18 +203,22 @@ body {
   color: #333;
   margin-bottom: 0.1875rem; /* 3px minimal spacing */
   text-transform: lowercase;
+  opacity: 0.67; /* Faded effect for all menu titles */
 }
 
 .menu-item:nth-of-type(1) .menu-item-title {
   color: #FFA700; /* First menu item - orange/amber */
+  text-shadow: 0 0 15px rgba(255, 167, 0, 0.2); /* Soft orange glow */
 }
 
 .menu-item:nth-of-type(2) .menu-item-title {
   color: #996600; /* Second menu item - brown/gold */
+  text-shadow: 0 0 15px rgba(153, 102, 0, 0.2); /* Soft brown/gold glow */
 }
 
 .menu-item:nth-of-type(3) .menu-item-title {
   color: #E73C3C; /* Third menu item - red */
+  text-shadow: 0 0 15px rgba(231, 60, 60, 0.2); /* Soft red glow */
 }
 
 .menu-item-underline {
@@ -218,7 +226,8 @@ body {
   height: 1px;
   background-color: #333;
   margin: 0;
-  margin-bottom: 0.75rem; /* 12px spacing to description */
+  margin-bottom: 0.675rem; /* 12px spacing to description */
+  opacity: 0.67; /* Faded effect for menu item underlines */
 }
 
 .menu-item-description {
@@ -226,11 +235,11 @@ body {
   color: #666;
   line-height: 1.5;
   margin: 0;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.675rem;
 }
 
 .menu-item-ingredient-list {
-  font-size: 0.75rem; /* Smaller than description */
+  font-size: 0.675rem; /* Smaller than description */
   font-weight: 300; /* Thinner font weight */
   color: #888; /* Lighter color */
   line-height: 1.4;
