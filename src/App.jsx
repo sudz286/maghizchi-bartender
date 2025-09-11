@@ -4,30 +4,23 @@ import Footer from './components/Footer'
 import './styles/main.css'
 
 function App() {
-  const loremText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
-
   return (
     <main className="app">
       <Header />
       <MenuItem 
-        title="rasna cocktail" 
-        description={loremText}
-        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
+        title="tang dynasty" 
+        description="a vibrant indian-inspired cocktail that brings back childhood memories with a boozy twist."
+        ingredient_list="vodka, white rum, rasna mix, lime juice, mint leaves, orange slice, lime wheel"
       />
       <MenuItem 
-        title="classic margarita" 
-        description={loremText} 
-        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
+        title="madras mule" 
+        description="a sophisticated south indian coffee house meets cocktail lounge. rich coffee concentrate blends with premium spirits and cream."
+        ingredient_list="vodka, kahlua, coffee, heavy cream, simple syrup"
       />
       <MenuItem 
-        title="whiskey sour" 
-        description={loremText} 
-        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
-      />
-      <MenuItem 
-        title="old fashioned" 
-        description={loremText} 
-        ingredient_list={"vodka, bacardi, rasna mix, orange slice, fresh mint leaves and fresh lime"}
+        title="*mango lassi" 
+        description="a creamy, traditional Indian yogurt-based drink that's naturally refreshing and cooling. can be made alcoholic on request ;)"
+        ingredient_list="fresh mango lassi, yogurt, natural sweeteners, traditional indian spices"
       />
       <Footer />
     </main>

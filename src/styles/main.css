@@ -143,21 +143,21 @@ body {
 
 @keyframes subtitleFlip {
   0%, 30% {
-    content: "நல்ல வரவேற்பு";
+    content: "சரக்கு அடிப்போம்";
     transform: rotateX(0deg);
   }
   33% {
     transform: rotateX(-90deg); /* Flip from opposite direction */
   }
   35%, 63% {
-    content: "warm welcome";
+    content: "keep em' comin";
     transform: rotateX(0deg);
   }
   66% {
     transform: rotateX(-90deg); /* Flip from opposite direction */
   }
   68%, 97% {
-    content: "स्वागत है";
+    content: "पेग मारना है";
     transform: rotateX(0deg);
   }
   100% {
